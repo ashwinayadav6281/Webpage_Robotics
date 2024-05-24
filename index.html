@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Secretary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #profile {
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        #profile img {
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+        #profile div {
+            max-width: 600px;
+        }
+        .project {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Robotics Club</h1>
+        </header>
+        
+         <section class="profile">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Secretary</h2>
+            <p>Welcome to the Robotics Club. This is your Secretary, Ashwina Yadav. This club is where your imagination meets curiosity. Create. Explore. Innovate.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Summer Projects 2024</h2>
+            <div class="project">
+                <img src="project1.png" alt="Project 1" class="project-pic">
+                <p>Project 1: Autonomous Mars Rover - Developing an advanced rover capable of navigating the harsh Martian terrain autonomously.</p>
+            </div>
+            <div class="project">
+                <img src="project2.png" alt="Project 2" class="project-pic">
+                <p>Project 2: Robotic Arm - Creating a highly dexterous robotic arm for precision tasks in various environments.</p>
+            </div>
+            <div class="project">
+                <img src="project3.png" alt="Project 3" class="project-pic">
+                <p>Project 3: Space Station:Control and Navigation - Develop a control system for remotely operating the Rover.</p>
+            </div>
+<div class="project">
+                <img src="project4.png" alt="Project 4" class="project-pic">
+                <p>Project 4: Gyrobot - A self balancing Robot that achieves perfect equilibrium, using technology and engineering.</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('mouseenter', () => {
+                project.style.transform = 'scale(1.05)';
+            });
+            project.addEventListener('mouseleave', () => {
+                project.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
